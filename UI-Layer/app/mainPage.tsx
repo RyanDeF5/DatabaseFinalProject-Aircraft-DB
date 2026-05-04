@@ -70,6 +70,7 @@ export function MainPage() {
 
   const handleOkDelAFP = async (row_id: any) => {
     console.log("Received Data: ", row_id);
+    setLoading(true);
 
     const start = performance.now();
     try {
@@ -97,6 +98,7 @@ export function MainPage() {
   };
   const handleOkAddAFP = async (data: Record<string, string>) => {
     console.log("Received Data: ", data);
+    setLoading(true);
 
     const start = performance.now();
     try {
